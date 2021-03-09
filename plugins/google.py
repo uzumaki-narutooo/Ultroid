@@ -111,7 +111,7 @@ async def reverse(event):
     pth = gi.download(args)
     ok = pth[0][text]
     await event.client.send_file(
-        event.chat_id, ok, album=True, caption="Similar Images Realted to Search"
+        event.chat_id, ok, album=True, caption="/protecc "
     )
     rmtree(f"./resources/downloads/{text}/")
     os.remove(dl)
